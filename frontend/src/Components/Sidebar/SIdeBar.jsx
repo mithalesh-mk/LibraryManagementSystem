@@ -14,8 +14,9 @@ const Sidebar = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         
-        {isOpen ? <FaTimes size={24} />: <FaBars size={24} />}
+        {isOpen ?<FaTimes size={24} />: <FaBars size={24} />}
       </button>
+      
 
 
       
@@ -24,9 +25,9 @@ const Sidebar = () => {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 lg:block`}
       >
-        <div className="p-4 font-bold text-lg"> Library Management System</div>
-        <ul className="flex flex-col space-y-4 p-4">
-          <li className="hover:bg-gray-700 p-2 rounded">
+        
+        <ul className=" lg:mt-4 flex flex-col space-y-4 p-4 ">
+          <li className="min-[400px]:mt-12 hover:bg-gray-700 p-2 rounded">
             <Link to="/">Dashboard</Link>
           </li>
           <li className="hover:bg-gray-700 p-2 rounded">
